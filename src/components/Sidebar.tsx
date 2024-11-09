@@ -189,7 +189,7 @@ export function Sidebar({
     <div className='sticky top-[72px] z-20 bg-background py-2'>
       <Button
         ref={buttonRef}
-        onClick={() => setSidebarOpen((s) => !s)}
+        onClick={() => setSidebarOpen((s: any) => !s)}
         className="w-fit gap-2"
       >
         {sidebarOpen ? <X className="size-5" /> : <Menu className="size-5" />}
